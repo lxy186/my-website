@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+</head>
+<body>
+    <div class="hero-background"></div>
+    <header>
+        <nav>
+            <h1>Lxy个人空间</h1>
+            <div class="nav-links">
+                <a href="#about">关于我</a>
+                <a href="#portfolio">项目经历</a>
+                <a href="#contact">联系我</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <img src="image/tx.jpg" alt="我的头像" class="avatar">
+                <div class="about-text">
+                    <div class="info-line">
+                        <p>姓名：xxx</p>
+                        <p>年龄：xx</p>
+                    </div>
+                    <div class="info-line">
+                        <p>本科：xxxxxxx</p>
+                        <p>硕士：xxxxxx</p>
+                    </div>
+                    <div class="experience">
+                        <h3>项目经历</h3>
+                        <div class="project">
+                            <h4>项目一</h4>
+                            <p>负责xxx项目的开发与维护，使用xxx技术栈，实现了xxx功能，提升了xxx效率。</p>
+                        </div>
+                        <div class="project">
+                            <h4>项目二</h4>
+                            <p>参与xxx项目的设计与实现，主要负责xxx模块，解决了xxx问题，获得了xxx成果。</p>
+                        </div>
+                        <div class="project">
+                            <h4>项目三</h4>
+                            <p>独立完成xxx项目，运用xxx技术，实现了xxx功能，达到了xxx目标。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>项目经历</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="image/tu1.jpg" alt="作品1" class="portfolio-img">
+                    <div class="portfolio-description">
+                        <h3>项目一</h3>
+                        <p>这是第一个项目的详细描述。在这里你可以介绍作品的背景、使用的技术、实现的功能等。</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="image/tu2.jpg" alt="作品2" class="portfolio-img">
+                    <div class="portfolio-description">
+                        <h3>项目二</h3>
+                        <p>这是第二个项目的详细描述。你可以描述项目的难点、解决方案、以及最终达到的效果。</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="image/tu3.jpg" alt="作品3" class="portfolio-img">
+                    <div class="portfolio-description">
+                        <h3>项目三</h3>
+                        <p>这是第三个项目的详细描述。你可以展示项目的创新点、用户反馈、以及项目的影响力。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-chat">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>AI 助手</h2>
+                <div class="chat-status">在线</div>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- 消息会在这里动态显示 -->
+            </div>
+            <div class="chat-input-container">
+                <div class="chat-input">
+                    <div class="upload-button-container">
+                        <button id="upload-file" class="upload-button">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13.5L7.5 11H11V7h2v4h3.5L12 15.5z"/>
+                            </svg>
+                        </button>
+                        <div class="upload-tooltip">点击上传文件</div>
+                    </div>
+                    <textarea id="user-input" placeholder="输入你的问题..." rows="1"></textarea>
+                    <button id="send-message">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="chat-tips">按 Enter 发送，Shift + Enter 换行</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="social-links">
+            <a href="#" class="social-icon" id="wechat">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.018-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/>
+                </svg>
+            </a>
+            <a href="https://www.douyin.com/user/self?from_tab_name=main" class="social-icon" target="_blank">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                </svg>
+            </a>
+            <a href="https://space.bilibili.com/1759364063?spm_id_from=333.1007.0.0" class="social-icon" target="_blank">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373Z"/>
+                </svg>
+            </a>
+        </div>
+        <!-- 微信二维码弹窗 -->
+        <div id="wechat-modal" class="modal">
+            <span class="close-modal">&times;</span>
+            <img src="image/weixin.jpg" alt="微信二维码" class="modal-content">
+        </div>
+    </footer>
+
+    <!-- 上传文件弹窗 -->
+    <div id="upload-modal" class="upload-modal">
+        <div class="upload-modal-content">
+            <div class="upload-modal-text">暂时无法实现，请退出上传</div>
+            <button class="upload-modal-close">确定</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
